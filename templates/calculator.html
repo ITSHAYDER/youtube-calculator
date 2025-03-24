@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Calculate YouTube playlist duration for free using Media Saver Hub">
+    <meta name="author" content="Hayder Maamri">
+    <title>YouTube Playlist Duration Calculator</title>
+    <script src="https://kit.fontawesome.com/3faa7171f9.js" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background"></div> <!-- Starry background for the whole page -->
+    <div class="form-container">
+        <h1>YouTube Playlist Duration Calculator</h1>
+        <h2>Enter Playlist URL</h2>
+        <form action="/" method="post">
+            <input type="text" placeholder="Enter playlist URL" name="url" required>
+            <button type="submit">Calculate</button>
+        </form>
+
+        {% if duration %}
+        <div class="result">
+            <p>Playlist Duration: <strong>{{ duration }}</strong></p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

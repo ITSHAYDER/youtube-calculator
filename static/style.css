@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Starry Background Effect */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.pixabay.com/photo/2017/12/23/15/12/space-3033484_960_720.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.3; /* Subtle starry background effect */
+    z-index: -1;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Glass effect */
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    z-index: 1; /* Ensure the form is on top of the background */
+}
+
+/* Heading Styles */
+h1 {
+    color: #bb86fc; /* Purple text color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #e0e0e0; /* Light text color */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #333;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #bb86fc;
+    outline: none;
+}
+
+button {
+    width: 50%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6200ee; /* Purple button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Result Styles */
+.result {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #bb86fc;
+}
+
+.result p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
